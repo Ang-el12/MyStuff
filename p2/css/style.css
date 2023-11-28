@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Patrick+Hand&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 3rem;
+  min-height: 200vh;
+  background-color: rgb(43, 61, 43);
+
+}
+
+a {
+  color:rgb(33, 107, 33);
+}
+a:visited{
+  color: rgb(0, 87, 163);
+}
+
+a:hover, a:active {
+  color: rgb(95, 9, 38);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Gloria Hallelujah", cursive; 
+  color: rgb(172, 26, 21);
+
+}
+
+
+.container {
+  border: 5px solid rgb(91, 94, 89);
+  font-size: 1.5rem;
+  margin-top: 1em;
+  margin-right: 15em;
+  margin-left: 15em;
+  margin-bottom: 1em;
+  padding: 1.5em;
+}
+
+p {
+  border: 4px dotted rgb(58, 87, 31);
+  background-color: rgb(197, 125, 91);
+  font-size: 2rem;
+  margin-top: 2em;
+  margin-right: 2em;
+  margin-left: 2em; 
+  margin-bottom: 1em;
+  padding: 1.5em;
+}
+
+table, tr, th, td, caption {
+  border: 1px solid #eee;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
+
+#nav {
+  background-color: rgba(180, 178, 156, 0.671);
+  border: solid rgb(85, 94, 77);
+}
+
+ul {
+  border: 4px dotted rgb(58, 87, 31);
+  background-color: rgb(105, 95, 80);
+  font-size: 2rem;
+  margin-top: 2em;
+  margin-right: 2em;
+  margin-left: 2em; 
+  margin-bottom: 1em;
+  padding: 1.5em;
+}
+
+#gods, #gods1, #gods2, #gods3, #gods4 {
+  display: none;
+}
+
+#cb, #cb1, #cb2, #cb3, #cb4 {
+  border: 4px dotted rgb(202, 116, 59);
+  background-color: rgb(159, 204, 157);
+}
+
+
+#center {
+  text-align: center;
+}
+
+#cc, #cc1, #cc2 {
+  background-color: rgb(155, 113, 77);
+}
+
+#foot, #foot1 {
+  background-color: transparent;
+}
+
+footer p {
+  border: none; /* or border: 0; */
+  font-size: 1.2rem;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 15em;
+  margin-right:15em;
+  padding: 0.5em;
+}
