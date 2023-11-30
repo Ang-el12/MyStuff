@@ -9,17 +9,22 @@
   box-sizing: border-box;
 }
 
+/* Body Styles */
 
 body {
   font-family: 'Patrick Hand', cursive;
   font-size: 3rem;
   min-height: 200vh;
-  background-image:url(../img/background-side-ai.jpg);
+  background-image:url(../proj_images/background-side-ai.jpg);
+
 }
+
+/* Link Styles */
 
 a {
   color:rgb(33, 107, 33);
 }
+
 a:visited{
   color: rgb(0, 87, 163);
 }
@@ -28,42 +33,28 @@ a:hover, a:active {
   color: rgb(95, 9, 38);
 }
 
-body h1, body h2, body h3, body h4, body h5 {
+h1, h2, h3, h4, h5 {
   font-family: "Gloria Hallelujah", cursive; 
   color: rgb(172, 26, 21);
-  border: 4px solid rgb(58, 87, 31);
-  font-size: 2.5rem;
-  margin-top: 2em;
-  margin-right: 22em;
-  margin-left: 1em; 
-  margin-bottom: 1em;
+  font-size: 2em;
 
 }
 
-#headerSection h1 {
-  border: 5px dashed;
-  text-align: center;
-  background-color: rgb(32, 54, 9);
-  margin-top: 2em;
-  margin-right: 22em;
-  margin-left: 15em; 
-  margin-bottom: 1em;
-}
 
-#headerSection h2 {
-  display: none;
-}
+/* Container Styles */
 
 .container {
-  background-color: rgb(43, 61, 43); 
-  border: 5px solid rgb(91, 94, 89);
+  border: 5px solid rgb(207, 15, 15);
   font-size: 1.5rem;
   margin-top: 1em;
   margin-right: 15em;
   margin-left: 15em;
   margin-bottom: 1em;
   padding: 1.5em;
+  background-color: rgb(43, 61, 43);
 }
+
+/* Paragraph Styles */
 
 p {
   border: 4px dotted rgb(58, 87, 31);
@@ -76,33 +67,29 @@ p {
   padding: 1.5em;
 }
 
-h1, h2, h3, h4, h5 {
-  border: 4px solid rgb(58, 87, 31);
-  font-size: 2.5rem;
-  text-align: center;
-  margin-top: 2em;
-  margin-right: 22em;
-  margin-left: 1em; 
-  margin-bottom: 1em;
-}
-
-figcaption {
-  display: none;
-}
+/* Table Styles */
 
 table, tr, th, td, caption {
   border: 1px solid #eee;
   border-collapse: collapse;
-  background-color: rgb(99, 180, 133);
   padding: 0.5rem;
+  background-color: rgb(99, 180, 133);
 }
+
+/* Navigation Styles */
 
 #nav {
-  background-color: rgba(180, 178, 156, 0.671);
-  border: solid rgb(85, 94, 77);
-  padding: 3rem;
+  background-color: rgb(30, 142, 207);
+  border: solid rgb(6, 167, 17);
+  margin-top: 1em;
+  margin-right: 2em;
+  margin-left: 2em; 
+  margin-bottom: 1em;
+  padding: 1em;
+  list-style: none;
 }
 
+/* List Styles */
 
 ul {
   border: 4px dotted rgb(58, 87, 31);
@@ -116,8 +103,36 @@ ul {
 }
 
 #page {
-  font-size: 1.2em;
+  font-size: 1.3em;
   list-style: none;
+  color: rgb(117, 23, 23);
+}
+
+/* Hidden Element Styles */
+
+#pages {
+  display: none;
+}
+
+#gods, #gods1, #gods2, #gods3, #gods4 {
+  display: none;
+}
+
+#cb, #cb1, #cb2, #cb3, #cb4 {
+  border: 4px dotted rgb(202, 116, 59);
+  background-color: rgb(159, 204, 157);
+}
+
+/* Centered Text Styles */
+
+#center {
+  text-align: center;
+}
+
+/* Custom Class Styles */
+
+#cc, #cc1, #cc2 {
+  background-color: rgb(155, 113, 77);
 }
 
 #poem {
@@ -131,30 +146,15 @@ ul {
   padding: 1.5em;
 }
 
-#gods, #gods1, #gods2, #gods3, #gods4 {
-  display: none;
-}
+/* Footer Styles */
 
-#cb, #cb1, #cb2, #cb3, #cb4 {
-  border: 4px dotted rgb(202, 116, 59);
-  background-color: rgb(159, 204, 157);
-}
-
-
-#center {
-  text-align: center;
-}
-
-#cc, #cc1, #cc2 {
-  background-color: rgb(155, 113, 77);
-}
-
-#foot, {
+#foot {
   background-color: transparent;
 }
 
-#foot1, {
-  background-color: orange;
+#foot1 {
+  border: dashed rgb(36, 119, 32);
+  background-color: rgb(106, 166, 223);
 }
 
 footer p {
