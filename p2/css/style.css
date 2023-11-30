@@ -28,23 +28,31 @@ a:hover, a:active {
   color: rgb(95, 9, 38);
 }
 
-h1, h2, h3, h4, h5 {
+body h1, body h2, body h3, body h4, body h5 {
   font-family: "Gloria Hallelujah", cursive; 
   color: rgb(172, 26, 21);
-
-}
-
-.containerr {
-  background-color: rgb(43, 61, 43); 
-  border: 5px solid rgb(91, 94, 89);
-  font-size: 1.5rem;
-  margin-top: 1em;
-  margin-right: 15em;
-  margin-left: 15em;
+  border: 4px solid rgb(58, 87, 31);
+  font-size: 2.5rem;
+  margin-top: 2em;
+  margin-right: 22em;
+  margin-left: 1em; 
   margin-bottom: 1em;
-  padding: 1.5em;
+
 }
 
+#headerSection h1 {
+  border: 5px dashed;
+  text-align: center;
+  background-color: rgb(32, 54, 9);
+  margin-top: 2em;
+  margin-right: 22em;
+  margin-left: 15em; 
+  margin-bottom: 1em;
+}
+
+#headerSection h2 {
+  display: none;
+}
 
 .container {
   background-color: rgb(43, 61, 43); 
@@ -56,9 +64,6 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 1em;
   padding: 1.5em;
 }
-
-
-
 
 p {
   border: 4px dotted rgb(58, 87, 31);
@@ -95,7 +100,9 @@ table, tr, th, td, caption {
 #nav {
   background-color: rgba(180, 178, 156, 0.671);
   border: solid rgb(85, 94, 77);
+  padding: 3rem;
 }
+
 
 ul {
   border: 4px dotted rgb(58, 87, 31);
@@ -106,6 +113,11 @@ ul {
   margin-left: 2em; 
   margin-bottom: 1em;
   padding: 1.5em;
+}
+
+#page {
+  font-size: 1.2em;
+  list-style: none;
 }
 
 #poem {
@@ -137,8 +149,12 @@ ul {
   background-color: rgb(155, 113, 77);
 }
 
-#foot, #foot1 {
+#foot, {
   background-color: transparent;
+}
+
+#foot1, {
+  background-color: orange;
 }
 
 footer p {
