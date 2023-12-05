@@ -1,7 +1,9 @@
-
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Patrick+Hand&display=swap');
 
+
+/* Reset and Box Model */
 
 * {
   margin: 0;
@@ -9,15 +11,19 @@
   box-sizing: border-box;
 }
 
-/* Body Styles */
+/* Body Styles w flex */
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: 'Patrick Hand', cursive;
   font-size: 3rem;
-  min-height: 200vh;
+  min-height: 100vh;
   background-image:url(../proj_images/background-side-ai.jpg);
 
 }
+
 
 /* Link Styles */
 
@@ -41,17 +47,91 @@ h1, h2, h3, h4, h5 {
 }
 
 
-/* Container Styles */
+/* Container Styles w flex */
 
-.container {
-  border: 5px solid rgb(207, 15, 15);
+.left-image,
+.right-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header Styles w Flex */
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 70px double  rgb(150, 99, 84);
   font-size: 1.5rem;
-  margin-top: 1em;
-  margin-right: 15em;
-  margin-left: 15em;
-  margin-bottom: 1em;
+  margin: 1em;
   padding: 1.5em;
   background-color: rgb(43, 61, 43);
+  width: 70%; 
+  
+}
+
+.container-header1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0.05em;
+  background-color: rgb(43, 61, 43);
+  border: solid rgb(167, 6, 6);
+  max-width: 70%;
+  margin: 8.2em 10em 10em 1em;
+  z-index: 2;
+}
+
+.left-image{
+  max-width: 100%;
+  height: auto;
+  width: 250px; 
+  margin-left: 150px;
+  margin:0;
+}
+
+/* Main Styles w Flex */
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.container-main {
+  border: 5px solid rgb(150, 99, 84);
+  font-size: 1.5rem;
+  margin: 1em 15em 1em 15em;
+  padding: 1.5em;
+  background-color: rgb(59, 43, 61);
+}
+
+/* Navigation Styles */
+
+#nav {
+  background-color: rgb(106, 166, 223);
+  border: solid rgb(6, 167, 17);
+  margin-top: 1em;
+  margin-right: 2em;
+  margin-left: 2em; 
+  margin-bottom: 1em;
+  padding: 1em;
+  list-style: none;
+}
+
+/* Article Styles */
+
+article {
+  background-color: rgb(43, 61, 43);
+  padding: 2em;
+  border: 30px double rgb(44, 90, 80);
+  display: center;
+  flex: 1;
+  margin: 1em;
 }
 
 /* Paragraph Styles */
@@ -60,10 +140,7 @@ p {
   border: 4px dotted rgb(58, 87, 31);
   background-color: rgb(197, 125, 91);
   font-size: 2rem;
-  margin-top: 2em;
-  margin-right: 2em;
-  margin-left: 2em; 
-  margin-bottom: 1em;
+  margin: 2em;
   padding: 1.5em;
 }
 
@@ -76,17 +153,9 @@ table, tr, th, td, caption {
   background-color: rgb(99, 180, 133);
 }
 
-/* Navigation Styles */
-
-#nav {
-  background-color: rgb(30, 142, 207);
-  border: solid rgb(6, 167, 17);
-  margin-top: 1em;
-  margin-right: 2em;
-  margin-left: 2em; 
-  margin-bottom: 1em;
-  padding: 1em;
-  list-style: none;
+tr:last-child td {
+  border: none;
+  font-size:  1.5em;
 }
 
 /* List Styles */
@@ -110,7 +179,7 @@ ul {
 
 /* Hidden Element Styles */
 
-#pages {
+#pages, #pages1 {
   display: none;
 }
 
@@ -148,21 +217,56 @@ ul {
 
 /* Footer Styles */
 
-#foot {
-  background-color: transparent;
-}
-
-#foot1 {
-  border: dashed rgb(36, 119, 32);
-  background-color: rgb(106, 166, 223);
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  margin: 1em;
+  padding: 1px 1px 1px 1px;
+  background-color:  rgb(59, 43, 61);
+  border: 30px double rgb(44, 90, 80);
+  gap: 2px;
 }
 
 footer p {
-  border: none; /* or border: 0; */
-  font-size: 1.2rem;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  margin-left: 15em;
-  margin-right:15em;
-  padding: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: rgb(106, 166, 223);
+}
+
+.links-list {
+  background-color: rgb(58, 87, 31);
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.footer-group-1 a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px; 
+}
+
+/* Style for ChatGPT V3.5 and Runway links */
+.footer-group-2 a {
+  text-decoration: none;
+  color: white;
+  margin-right: 50px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  margin-right: 50px;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
