@@ -1,0 +1,272 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Patrick+Hand&display=swap');
+
+
+/* Reset and Box Model */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles w flex */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 3rem;
+  min-height: 100vh;
+  background-image:url(../proj_images/background-side-ai.jpg);
+
+}
+
+
+/* Link Styles */
+
+a {
+  color:rgb(33, 107, 33);
+}
+
+a:visited{
+  color: rgb(0, 87, 163);
+}
+
+a:hover, a:active {
+  color: rgb(95, 9, 38);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Gloria Hallelujah", cursive; 
+  color: rgb(172, 26, 21);
+  font-size: 2em;
+
+}
+
+
+/* Container Styles w flex */
+
+.left-image,
+.right-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header Styles w Flex */
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 70px double  rgb(150, 99, 84);
+  font-size: 1.5rem;
+  margin: 1em;
+  padding: 1.5em;
+  background-color: rgb(43, 61, 43);
+  width: 70%; 
+  
+}
+
+.container-header1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0.05em;
+  background-color: rgb(43, 61, 43);
+  border: solid rgb(167, 6, 6);
+  max-width: 70%;
+  margin: 8.2em 10em 10em 1em;
+  z-index: 2;
+}
+
+.left-image{
+  max-width: 100%;
+  height: auto;
+  width: 250px; 
+  margin-left: 150px;
+  margin:0;
+}
+
+/* Main Styles w Flex */
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.container-main {
+  border: 5px solid rgb(150, 99, 84);
+  font-size: 1.5rem;
+  margin: 1em 15em 1em 15em;
+  padding: 1.5em;
+  background-color: rgb(59, 43, 61);
+}
+
+/* Navigation Styles */
+
+#nav {
+  background-color: rgb(106, 166, 223);
+  border: solid rgb(6, 167, 17);
+  margin-top: 1em;
+  margin-right: 2em;
+  margin-left: 2em; 
+  margin-bottom: 1em;
+  padding: 1em;
+  list-style: none;
+}
+
+/* Article Styles */
+
+article {
+  background-color: rgb(43, 61, 43);
+  padding: 2em;
+  border: 30px double rgb(44, 90, 80);
+  display: center;
+  flex: 1;
+  margin: 1em;
+}
+
+/* Paragraph Styles */
+
+p {
+  border: 4px dotted rgb(58, 87, 31);
+  background-color: rgb(197, 125, 91);
+  font-size: 2rem;
+  margin: 2em;
+  padding: 1.5em;
+}
+
+/* Table Styles */
+
+table, tr, th, td, caption {
+  border: 1px solid #eee;
+  border-collapse: collapse;
+  padding: 0.5rem;
+  background-color: rgb(99, 180, 133);
+}
+
+tr:last-child td {
+  border: none;
+  font-size:  1.5em;
+}
+
+/* List Styles */
+
+ul {
+  border: 4px dotted rgb(58, 87, 31);
+  background-color: rgb(105, 95, 80);
+  font-size: 2rem;
+  margin-top: 2em;
+  margin-right: 2em;
+  margin-left: 2em; 
+  margin-bottom: 1em;
+  padding: 1.5em;
+}
+
+#page {
+  font-size: 1.3em;
+  list-style: none;
+  color: rgb(117, 23, 23);
+}
+
+/* Hidden Element Styles */
+
+#pages, #pages1 {
+  display: none;
+}
+
+#gods, #gods1, #gods2, #gods3, #gods4 {
+  display: none;
+}
+
+#cb, #cb1, #cb2, #cb3, #cb4 {
+  border: 4px dotted rgb(202, 116, 59);
+  background-color: rgb(159, 204, 157);
+}
+
+/* Centered Text Styles */
+
+#center {
+  text-align: center;
+}
+
+/* Custom Class Styles */
+
+#cc, #cc1, #cc2 {
+  background-color: rgb(155, 113, 77);
+}
+
+#poem {
+  border: 4px dotted rgb(202, 116, 59);
+  background-color: rgb(159, 204, 157);
+  Font-size: 1.5rem;
+  margin-top: 2em;
+  margin-right: 15em;
+  margin-left: 5em; 
+  margin-bottom: 1em;
+  padding: 1.5em;
+}
+
+/* Footer Styles */
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  margin: 1em;
+  padding: 1px 1px 1px 1px;
+  background-color:  rgb(59, 43, 61);
+  border: 30px double rgb(44, 90, 80);
+  gap: 2px;
+}
+
+footer p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: rgb(106, 166, 223);
+}
+
+.links-list {
+  background-color: rgb(58, 87, 31);
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.footer-group-1 a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px; 
+}
+
+/* Style for ChatGPT V3.5 and Runway links */
+.footer-group-2 a {
+  text-decoration: none;
+  color: white;
+  margin-right: 50px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  margin-right: 50px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
