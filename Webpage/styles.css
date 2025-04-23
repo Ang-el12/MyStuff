@@ -142,6 +142,25 @@
   .content-section h3 {
     margin-bottom: 10px;
   }
+
+  #recent-blogs {
+    list-style: none;
+    padding: 0;
+}
+
+#recent-blogs li {
+    margin-bottom: 10px;
+}
+
+#recent-blogs li a {
+    color: #5c4a47;
+    text-decoration: none;
+}
+
+#recent-blogs li a:hover {
+    color: #a1687f;
+    text-decoration: underline;
+}
   
   .sidebar {
     flex: 1;
