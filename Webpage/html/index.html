@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="secretdiaryshhh" content="width=device-width, initial-scale=1.0">
     <title>Diary</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="../style/styles.css"/>
 </head>
 <body>
     <div class="container">
@@ -68,7 +68,7 @@
         const response = await fetch(feedUrl);
         const data = await response.json();
 
-        // Select the container where the blog entries will be displayed
+        // Select the container where the blog entries will be displayed 
         const recentBlogsContainer = document.getElementById('recent-blogs');
         
         // Get the first 3 blog entries from the feed
