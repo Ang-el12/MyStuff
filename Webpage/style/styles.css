@@ -50,6 +50,7 @@
     animation: floatCloud 6s ease-in-out infinite;
     z-index: -1; 
   }
+
   
   /* Floating animation keyframes */
   @keyframes floatCloud {
