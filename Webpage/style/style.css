@@ -10,6 +10,10 @@ body {
 
 /* ===== Window / Card Wrapper ===== */
 .window {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   width: 600px;
   margin: 0 auto;
   padding: 20px;
