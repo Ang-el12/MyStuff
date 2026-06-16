@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
-    <link rel="stylesheet" href="../style/style.css"/>
-        <link rel="stylesheet" href="../style/responsive.css"/>
-    <script src="/js/clock.js" defer></script>
+    <link rel="stylesheet" href="style/style.css"/>
+        <link rel="stylesheet" href="style/responsive.css"/>
+    <script src="js/clock.js" defer></script>
 </head>
 <body>
     <div class="window">
@@ -38,23 +38,38 @@
             </div>
 
             <div class="avatar">
-                <img src="/images/hatsune-miku-pixel-art.gif" alt="Hatsune Miku avatar GIF">
+                <img src="images/hatsune-miku-pixel-art.gif" alt="Hatsune Miku avatar GIF">
             </div>
         </div>
 
         <!-- Content 
         <div class="content">
             <h2>About Me</h2>
-            <p>Welcome to my profile! Here you can see my posts, updates, and media gallery.</p>
+            <p> Welcome to my profile! Here you can see my posts, updates, and media gallery. </p>
         </div> -->
 
-        <!-- Tabs -->
-        <div class="tabs">
-            <button>Overview</button>
-            <button>Posts</button>
-            <button>Gallery</button>
-        </div>
+<div class="tabs">
+  <button class="tab-button" data-tab="overview">Overview</button>
+  <button class="tab-button" data-tab="posts">Posts</button>
+  <button class="tab-button" data-tab="gallery">Gallery</button>
+</div>
 
+<div class="tab-content">
+  <div id="overview" class="tab-panel">
+    <h2>Overview</h2>
+    <p></p>
+  </div>
+  
+  <div id="posts" class="tab-panel">
+    <h2>Posts</h2>
+    <p>This is where your posts will go.</p>
+  </div>
+  
+  <div id="gallery" class="tab-panel">
+    <h2>Gallery</h2>
+    <p>Your gallery content will display here.</p>
+  </div>
+</div>
     </div>
 
     <!-- Bottom Navigation -->
